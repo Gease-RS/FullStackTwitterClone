@@ -1,0 +1,8 @@
+npx prisma generate
+
+prisma\migrate\.env
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/twitter-clone"
+
+npx prisma migrate save --experimental
+
+npx prisma migrate up --experimental
